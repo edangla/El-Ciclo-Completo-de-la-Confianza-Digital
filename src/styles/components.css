@@ -1238,6 +1238,8 @@
   .payment-methods,
   .footer-grid,
   .login-card,
+  .profile-layout,
+  .profile-field-grid,
   .status-grid {
     grid-template-columns: 1fr;
   }

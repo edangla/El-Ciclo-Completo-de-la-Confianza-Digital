@@ -35,7 +35,7 @@ function loadState() {
     if (nextState.user) {
       nextState.user = { ...nextState.user, ...simulatedUser }
     }
-    if (nextState.traveler.email && nextState.traveler.email !== simulatedUser.email) {
+    if (nextState.traveler.email?.includes('dangla')) {
       nextState.traveler.firstName = simulatedUser.firstName
       nextState.traveler.lastName = simulatedUser.lastName
       nextState.traveler.email = simulatedUser.email

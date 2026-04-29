@@ -19,6 +19,17 @@ Para compilar:
 npm run build
 ```
 
+## Publicar en GitHub Pages
+
+El proyecto está preparado para GitHub Pages como Project Page del repositorio `El-Ciclo-Completo-de-la-Confianza-Digital`.
+
+1. Sube los cambios a GitHub.
+2. Activa Pages desde `Settings` -> `Pages`.
+3. En `Build and deployment`, selecciona `GitHub Actions`.
+4. El workflow `Deploy to GitHub Pages` compilará y publicará `dist`.
+
+La app usa rutas con hash (`/#/...`) para que los enlaces internos funcionen al refrescar o compartir URLs en GitHub Pages.
+
 ## Flujo principal
 
-`/` -> `/search` -> `/itinerary/barcelona-cultural-3-dias` -> `/login` -> `/checkout` -> `/payment` -> `/payment/verification` -> `/confirmation` -> `/my-booking`
+`/` -> `/#/search` -> `/#/itinerary/barcelona-cultural-3-dias` -> `/#/login` -> `/#/checkout` -> `/#/payment` -> `/#/payment/verification` -> `/#/confirmation` -> `/#/my-booking`
